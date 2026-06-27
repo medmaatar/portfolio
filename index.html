@@ -264,7 +264,7 @@
   /* ---------- Contact ---------- */
   .contact { text-align: center; max-width: 760px; margin-inline: auto; }
   .contact__lead { color: var(--text-soft); font-size: 1.1rem; margin-bottom: 36px; }
-  .contact__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 36px; }
+  .contact__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 36px; }
   .contact__item { display: flex; flex-direction: column; align-items: center; gap: 5px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 16px; transition: transform .25s, border-color .25s; }
   .contact__item:hover { transform: translateY(-5px); border-color: var(--accent); }
   .contact__icon { font-size: 1.5rem; color: var(--accent); margin-bottom: 6px; }
@@ -372,8 +372,11 @@
           <li><a href="https://github.com/medmaatar" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
           </a></li>
-          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+          <li><a href="https://www.linkedin.com/in/m-maatar" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34v-7.2H5.96v7.2h2.38zM7.15 10.1a1.38 1.38 0 1 0 0-2.76 1.38 1.38 0 0 0 0 2.76zm11.19 8.24v-3.95c0-2.11-.45-3.74-2.92-3.74-1.19 0-1.99.65-2.31 1.27h-.03v-1.08h-2.28v7.2h2.38v-3.56c0-.94.18-1.85 1.34-1.85 1.15 0 1.16 1.07 1.16 1.91v3.5h2.66z"/></svg>
+          </a></li>
+          <li><a href="https://orcid.org/0000-0002-6893-5166" target="_blank" rel="noopener" title="ORCID" aria-label="ORCID">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.516.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg>
           </a></li>
           <li><a href="tel:+21652355714" title="Phone" aria-label="Phone">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/></svg>
@@ -680,10 +683,20 @@
               <span class="contact__k">Phone</span>
               <span class="contact__v">+216 52 355 714</span>
             </a>
+            <a class="contact__item" href="https://www.linkedin.com/in/m-maatar" target="_blank" rel="noopener">
+              <span class="contact__icon">in</span>
+              <span class="contact__k">LinkedIn</span>
+              <span class="contact__v">in/m-maatar</span>
+            </a>
             <a class="contact__item" href="https://github.com/medmaatar" target="_blank" rel="noopener">
               <span class="contact__icon">⌥</span>
               <span class="contact__k">GitHub</span>
               <span class="contact__v">@medmaatar</span>
+            </a>
+            <a class="contact__item" href="https://orcid.org/0000-0002-6893-5166" target="_blank" rel="noopener">
+              <span class="contact__icon">iD</span>
+              <span class="contact__k">ORCID</span>
+              <span class="contact__v">0000-0002-6893-5166</span>
             </a>
           </div>
           <a href="mailto:maatar93@gmail.com" class="btn btn--primary btn--lg reveal">Say hello →</a>
