@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohamed Maatar — Ph.D. Data Scientist & AI/RL Engineer specializing in Deep Learning, Computer Vision, NLP and Reinforcement Learning." />
+  <meta name="author" content="Mohamed Maatar" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mohamed Maatar — Data Scientist & AI Engineer" />
+  <meta property="og:description" content="Ph.D. in Computer Science. Deep Learning, Computer Vision, NLP & Reinforcement Learning. From Proof of Concept to production." />
+  <meta property="og:type" content="website" />
+
+  <title>Mohamed Maatar — Data Scientist & AI Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand">MM<span class="nav__brand-dot">.</span></a>
+
+      <nav class="nav__menu" id="navMenu">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="assets/files/Mohamed_Maatar_CV.pdf" class="btn btn--sm btn--outline" download>Résumé ↓</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal">
+          <span class="hero__status"></span> Available for new opportunities
+        </p>
+        <h1 class="hero__title reveal">
+          Mohamed <span class="grad-text">Maatar</span>
+        </h1>
+        <h2 class="hero__subtitle reveal">
+          <span class="typed" id="typed"></span><span class="caret">|</span>
+        </h2>
+        <p class="hero__lead reveal">
+          Ph.D. in Computer Science with 5+ years turning complex research into
+          production-grade AI. I design and industrialize <strong>Deep Learning</strong>,
+          <strong>Computer Vision</strong>, <strong>NLP</strong> and
+          <strong>Reinforcement Learning</strong> systems — from Proof of Concept to deployment.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">View my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+        <ul class="hero__socials reveal">
+          <li><a href="mailto:maatar93@gmail.com" title="Email" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+          </a></li>
+          <li><a href="https://github.com/medmaatar" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          </a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34v-7.2H5.96v7.2h2.38zM7.15 10.1a1.38 1.38 0 1 0 0-2.76 1.38 1.38 0 0 0 0 2.76zm11.19 8.24v-3.95c0-2.11-.45-3.74-2.92-3.74-1.19 0-1.99.65-2.31 1.27h-.03v-1.08h-2.28v7.2h2.38v-3.56c0-.94.18-1.85 1.34-1.85 1.15 0 1.16 1.07 1.16 1.91v3.5h2.66z"/></svg>
+          </a></li>
+          <li><a href="tel:+21652355714" title="Phone" aria-label="Phone">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/></svg>
+          </a></li>
+        </ul>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat reveal"><span class="stat__num" data-count="5" data-suffix="+">0</span><span class="stat__label">Years in R&D / AI</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="93" data-suffix="%">0</span><span class="stat__label">Model accuracy (MedTech)</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="40" data-suffix="%">0</span><span class="stat__label">Faster NLP pipelines</span></div>
+        <div class="stat reveal"><span class="stat__num">Ph.D</span><span class="stat__label">Computer Science</span></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">01 — About</span>
+          <h2 class="section__title">Research-grade AI, built for production</h2>
+        </header>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              I'm <strong>Mohamed Maatar</strong>, a Data Scientist and AI/RL Engineer holding a
+              <strong>Ph.D. in Computer Science &amp; Intelligent Systems</strong> from the University of Aizu (Japan).
+              Over the last five years I've worked across R&amp;D and software engineering, pairing
+              complex algorithm design with industrialization in scalable environments.
+            </p>
+            <p>
+              My experience spans demanding international settings — <strong>Japan</strong> and
+              <strong>France</strong> — and high-stakes sectors including <strong>offshore construction</strong>,
+              <strong>MedTech</strong> and <strong>aeronautics</strong>. I take ownership of the full project
+              lifecycle: feasibility study, algorithm design, training and evaluation, and reliable
+              deployment to production.
+            </p>
+            <ul class="about__list">
+              <li>Deep Learning, Computer Vision &amp; Pose Estimation</li>
+              <li>Reinforcement Learning for robotics (Sim2Real)</li>
+              <li>GenAI / LLM fine-tuning &amp; NLP industrialization</li>
+              <li>MLOps, reproducible experiments &amp; dashboards</li>
+            </ul>
+          </div>
+          <aside class="about__card reveal">
+            <div class="about__card-row"><span>Name</span><strong>Mohamed Maatar</strong></div>
+            <div class="about__card-row"><span>Role</span><strong>Data Scientist / AI&nbsp;Engineer</strong></div>
+            <div class="about__card-row"><span>Degree</span><strong>Ph.D. Computer Science</strong></div>
+            <div class="about__card-row"><span>Email</span><a href="mailto:maatar93@gmail.com">maatar93@gmail.com</a></div>
+            <div class="about__card-row"><span>Phone</span><a href="tel:+21652355714">+216 52 355 714</a></div>
+            <div class="about__card-row"><span>Languages</span><strong>EN · FR · AR</strong></div>
+            <a href="assets/files/Mohamed_Maatar_CV.pdf" class="btn btn--primary btn--block" download>Download Résumé</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">02 — Skills</span>
+          <h2 class="section__title">Tools &amp; expertise</h2>
+        </header>
+        <div class="skills">
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">{ }</div>
+            <h3>Technologies &amp; Tools</h3>
+            <div class="tags">
+              <span>Python · Expert</span><span>PyTorch</span><span>PyTorch-Lightning</span>
+              <span>HuggingFace</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span>
+              <span>IsaacLab</span><span>SKRL</span><span>Flask</span><span>Docker</span><span>Git</span>
+              <span>Weights &amp; Biases</span><span>TensorBoard</span><span>AWS <em>(in progress)</em></span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">◎</div>
+            <h3>Domain Expertise</h3>
+            <div class="tags">
+              <span>Reinforcement Learning</span><span>Robotics / Sim2Real</span>
+              <span>Computer Vision</span><span>Pose Estimation</span>
+              <span>GenAI &amp; LLM Fine-tuning</span><span>NLP</span>
+              <span>Biomedical Data Analysis</span><span>Industry 4.0</span><span>Aeronautics</span>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">⚙</div>
+            <h3>Methodologies &amp; Soft Skills</h3>
+            <div class="tags">
+              <span>Agile / Scrum</span><span>R&amp;D Project Management</span>
+              <span>Feasibility Study</span><span>Advanced Algorithmics</span>
+              <span>Scientific Communication</span><span>Technical Mentoring</span>
+              <span>Cognitive Flexibility</span><span>Teamwork</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">03 — Experience</span>
+          <h2 class="section__title">Where I've worked</h2>
+        </header>
+        <div class="timeline">
+
+          <article class="tl reveal">
+            <div class="tl__dot"></div>
+            <div class="tl__card">
+              <div class="tl__top">
+                <h3 class="tl__role">AI / RL Engineer</h3>
+                <span class="tl__date">Dec 2024 — Present</span>
+              </div>
+              <p class="tl__org">Eyes Japan <span class="tl__client">· Client: Aizawa Group</span></p>
+              <p class="tl__ctx">Designing autonomous drones capable of performing construction tasks for offshore wind farms.</p>
+              <ul class="tl__points">
+                <li>Built parameterizable simulation environments in NVIDIA Isaac Sim / Isaac Lab (state &amp; action spaces, agent–environment interaction).</li>
+                <li>Developed and trained RL policies (PPO, SAC, TD3) via RSL-RL &amp; SKRL with hyperparameter and exploration tuning.</li>
+                <li>Engineered cost functions and constraints for stability, convergence and robustness; applied Curriculum Learning &amp; domain randomization for generalization.</li>
+                <li>Automated experiment configuration for traceability &amp; reproducibility; adapted models from simulation to the real target system.</li>
+              </ul>
+              <p class="tl__result"><strong>Result:</strong> Successful Sim2Real demonstration — autonomous flight tasks validated in a real environment.</p>
+              <div class="tags tags--mini">
+                <span>Isaac Sim/Lab</span><span>PPO</span><span>SAC</span><span>TD3</span><span>RSL-RL</span><span>SKRL</span><span>PyTorch</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl reveal">
+            <div class="tl__dot"></div>
+            <div class="tl__card">
+              <div class="tl__top">
+                <h3 class="tl__role">ML Engineer &amp; Data Scientist</h3>
+                <span class="tl__date">Oct 2022 — Dec 2024</span>
+              </div>
+              <p class="tl__org">Eyes Japan <span class="tl__client">· Client: PD House Alan</span></p>
+              <p class="tl__ctx">MedTech AI to objectively assess Parkinson's disease severity through video analysis of standardized exercises (UPDRS standard).</p>
+              <ul class="tl__points">
+                <li>Built a pipeline integrating MediaPipe &amp; MMPose to extract landmarks and time series from video.</li>
+                <li>Engineered, normalized and selected features from pose data; trained supervised classification &amp; regression models.</li>
+                <li>Combined unit predictions into coherent global severity scores.</li>
+                <li>Built interactive Dash dashboards for feature inspection, dataset validation and model monitoring.</li>
+              </ul>
+              <p class="tl__result"><strong>Result:</strong> 93% accuracy classifying disease-severity levels.</p>
+              <div class="tags tags--mini">
+                <span>MediaPipe</span><span>MMPose</span><span>Scikit-learn</span><span>OpenCV</span><span>Dash</span><span>Plotly</span><span>Flask</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl reveal">
+            <div class="tl__dot"></div>
+            <div class="tl__card">
+              <div class="tl__top">
+                <h3 class="tl__role">Data Scientist — NLP &amp; MLOps</h3>
+                <span class="tl__date">Dec 2020 — Jun 2021</span>
+              </div>
+              <p class="tl__org">Air France / KLM</p>
+              <p class="tl__ctx">Industrialization project to automate the classification and processing of safety (Cabin) reports for the Data &amp; Business Analytics department.</p>
+              <ul class="tl__points">
+                <li>Built cleaning, normalization and vectorization rules for large textual corpora.</li>
+                <li>Fine-tuned the CamemBERT LLM with HuggingFace Transformers &amp; PyTorch, adapting it to domain-specific terminology.</li>
+                <li>Added unit tests, technical documentation and integration into internal application pipelines.</li>
+              </ul>
+              <p class="tl__result"><strong>Result:</strong> 40% faster report processing; reliable automation for confidence scores &gt; 85%.</p>
+              <div class="tags tags--mini">
+                <span>CamemBERT</span><span>HuggingFace</span><span>PyTorch</span><span>Lightning</span><span>W&amp;B</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl reveal">
+            <div class="tl__dot"></div>
+            <div class="tl__card">
+              <div class="tl__top">
+                <h3 class="tl__role">Fullstack Data Developer</h3>
+                <span class="tl__date">Dec 2020 — Feb 2021</span>
+              </div>
+              <p class="tl__org">Air France / KLM</p>
+              <p class="tl__ctx">Internal web application to automate the ingestion and processing of workplace-accident data.</p>
+              <ul class="tl__points">
+                <li>Designed a Flask web app with backend API, server logic and user interfaces.</li>
+                <li>Built ETL pipelines (ingestion, transformation, validation) with automated rules.</li>
+                <li>Integrated CamemBERT for text-report classification and deployed the tool with user support.</li>
+              </ul>
+              <p class="tl__result"><strong>Result:</strong> Adopted by business teams — eliminated repetitive file processing and manual exchange.</p>
+              <div class="tags tags--mini">
+                <span>Flask</span><span>ETL</span><span>HuggingFace</span><span>Pandas</span><span>PyTorch</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">04 — Projects</span>
+          <h2 class="section__title">Selected work</h2>
+        </header>
+        <div class="projects">
+
+          <article class="project reveal">
+            <div class="project__tag">Reinforcement Learning</div>
+            <h3>Autonomous Offshore Drones</h3>
+            <p>RL policies (PPO/SAC/TD3) trained in NVIDIA Isaac Lab with curriculum learning and domain randomization, taken from simulation to a validated real-world flight (Sim2Real) for offshore wind-farm construction.</p>
+            <div class="project__metric">Sim2Real validated</div>
+            <div class="tags tags--mini"><span>Isaac Lab</span><span>SKRL</span><span>PyTorch</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__tag">Computer Vision · MedTech</div>
+            <h3>Parkinson's Severity Assessment</h3>
+            <p>Video-based pipeline using MediaPipe &amp; MMPose to extract motion features and predict UPDRS severity levels with supervised models, surfaced through interactive Dash dashboards.</p>
+            <div class="project__metric">93% classification accuracy</div>
+            <div class="tags tags--mini"><span>MMPose</span><span>Scikit-learn</span><span>Dash</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__tag">NLP · LLM</div>
+            <h3>Cabin Safety Report Classifier</h3>
+            <p>Fine-tuned CamemBERT to automatically classify aviation safety reports, with full MLOps tooling: experiment tracking, unit tests and pipeline integration at Air France / KLM.</p>
+            <div class="project__metric">40% faster processing</div>
+            <div class="tags tags--mini"><span>CamemBERT</span><span>HuggingFace</span><span>W&amp;B</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__tag">Fullstack · Data</div>
+            <h3>Workplace Safety Web App</h3>
+            <p>Flask application automating ingestion and ETL of workplace-accident data, with an embedded CamemBERT classifier — deployed and adopted by internal business teams.</p>
+            <div class="project__metric">Deployed in production</div>
+            <div class="tags tags--mini"><span>Flask</span><span>ETL</span><span>NLP</span></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">05 — Education</span>
+          <h2 class="section__title">Academic background</h2>
+        </header>
+        <div class="edu">
+          <article class="edu__item reveal">
+            <span class="edu__year">2025</span>
+            <div>
+              <h3>Ph.D. in Computer Science &amp; Intelligent Systems</h3>
+              <p class="edu__school">University of Aizu, Japan</p>
+              <p class="edu__note">Topic: Neuromorphic Systems &amp; Thermal Optimization.</p>
+            </div>
+          </article>
+          <article class="edu__item reveal">
+            <span class="edu__year">2021</span>
+            <div>
+              <h3>M.Sc. in Data Science &amp; Big Data</h3>
+              <p class="edu__school">CY-Tech, Paris, France</p>
+            </div>
+          </article>
+          <article class="edu__item reveal">
+            <span class="edu__year">2018</span>
+            <div>
+              <h3>Computer Engineering Degree — ERP / BI</h3>
+              <p class="edu__school">ESPRIT</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">06 — Contact</span>
+          <h2 class="section__title">Let's build something</h2>
+        </header>
+        <div class="contact">
+          <p class="contact__lead reveal">
+            Open to roles and collaborations in Data Science, Machine Learning and AI engineering.
+            The fastest way to reach me is by email.
+          </p>
+          <div class="contact__grid reveal">
+            <a class="contact__item" href="mailto:maatar93@gmail.com">
+              <span class="contact__icon">✉</span>
+              <span class="contact__k">Email</span>
+              <span class="contact__v">maatar93@gmail.com</span>
+            </a>
+            <a class="contact__item" href="tel:+21652355714">
+              <span class="contact__icon">☏</span>
+              <span class="contact__k">Phone</span>
+              <span class="contact__v">+216 52 355 714</span>
+            </a>
+            <a class="contact__item" href="https://github.com/medmaatar" target="_blank" rel="noopener">
+              <span class="contact__icon">⌥</span>
+              <span class="contact__k">GitHub</span>
+              <span class="contact__v">@medmaatar</span>
+            </a>
+          </div>
+          <a href="mailto:maatar93@gmail.com" class="btn btn--primary btn--lg reveal">Say hello →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Mohamed Maatar</span>
+      <span class="footer__made">Built with HTML, CSS &amp; vanilla JS · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
